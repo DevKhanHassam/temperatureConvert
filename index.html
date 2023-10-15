@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="box">
+        <p  id="text">Please enter the temperature you'd like to convert</p>
+        <div id="mid">
+            <input type="number" name="temperature" id="temperature" pattern="-99999999-9999999999">
+            <select name="converter" id="convert">
+                <option value="Celsius">celsius</option>
+                <option value="Fahrenheit">Fahrenheit</option>
+            </select>
+        </div>
+        <button id="submitButton">Submit</button>
+        <p id="output"></p>
+    </div>
+</body>
+
+<style>
+
+    #box{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color:#606C5D;
+        margin-top: 40vh;
+        padding: 20px;
+        border-radius:30px;
+        height: 120px;
+    }
+
+    #text{
+        background-color:#FA9884;
+        padding: 5px;
+        border-radius: 7px;
+        margin-bottom: 20px;
+        font-size: large;
+    }
+    #submitButton{
+        margin-top: 20px;
+    }
+    body{
+        margin: 0px;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #F1C376;
+        
+        
+    }
+
+    
+</style>
+<script src="index.js"></script>
+</html>
